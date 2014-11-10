@@ -2,10 +2,8 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 
-group :development do
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'cucumber'
+group :development, :test do
+  gem 'rspec'
   gem 'capybara'
-  gem 'shotgun'
+  gem 'cucumber-sinatra'
 end
